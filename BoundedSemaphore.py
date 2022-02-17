@@ -29,7 +29,7 @@ def task(common, tid, critical, b):
 
 def main():
     lp = []
-    bounded = BoundedSemaphore(3)
+    bounded = BoundedSemaphore(1)
     common = Value('i', 0)
     critical = Array('i', [0]*N)
     for tid in range(N):
